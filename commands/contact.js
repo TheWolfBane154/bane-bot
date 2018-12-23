@@ -2,7 +2,7 @@ module.exports.run = (bot, message, args, Discord) => {
 let joinargs = args.join(" ")
 
 let em = new Discord.RichEmbed()
-.setTitle("Contacting Owner")
+.setTitle("Contacting Developer!")
 .setDescription(`Contacting owner for reason: ${joinargs}`)
 message.channel.send({embed: em})
 
