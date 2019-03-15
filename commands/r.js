@@ -19,7 +19,7 @@ module.exports.run = (bot, message, args, discord) => {
     channel.send({embed: em})
     .then(m => m.delete(5000))
     .then(() => bot.destroy())
-    .then(() => bot.login(process.env.Token))
+    .then(() => bot.login(process.env.TOKEN))
     .catch(err => console.error(err))
     .then(() => message.channel.send({embed: embed}))
   }
