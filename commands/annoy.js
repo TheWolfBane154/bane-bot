@@ -4,7 +4,7 @@ module.exports.run = (bot, message, args, discord) => {
   message.channel.send("You need to mention someone!")
  } else {
   let em = new discord.RichEmbed()
-   .setTitle("Bane Bot Annoy")
+   .setTitle("Puppy Bot Annoy")
    .setDescription(`Now annoying <@${member.id}>...`)
    .setColor("RED")
    .setThumbnail(bot.user.avatarURL)
@@ -19,5 +19,5 @@ module.exports.run = (bot, message, args, discord) => {
 
 module.exports.help = {
  name: "annoy",
- usage: ".annoy [@member]"
+ usage: "!annoy [@member]"
 }
